@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta name="generator" content=
+    "HTML Tidy for Windows (vers 14 February 2006), see www.w3.org">
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>
+      HtmlHelpDesk 0.1
+    </title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+    <div id="esterno">
+      <iframe src="indice.html" style="border: medium none ;">Il tuo browser
+      non supporta iframe</iframe>
+      <div id="box">
+        <h1>
+          Html Help Desk &gt; Tutorial
+        </h1>
+        <p>
+          <b>Html Help Desk</b> è costituito da un insieme di file. Alcuni di
+          essi possono essere rimossi se non necessari. Il file
+          <i>basic.html</i> è il modello base di ogni pagina. Ogni nuova
+          pagina può essere creata a partire da una copia di questo file. Il
+          file <i>indice.html</i> contiene invece l'indice dei documenti ed
+          andrà aggiornato ogni volta che si aggiunge una nuova pagina al
+          progetto.
+        </p><img style="width: 450px; height: 220px;" alt=
+        "Html Help Desk screeshot" src="hhd.png">
+        <p>
+          Il modello basic.html è costruito per integrare al proprio interno
+          il contenuto di indice.html. In ogni pagina quindi è possibile
+          individuare un <i>menù laterale</i> (a) che mostra il contenuto di
+          indice.html ed <i>un'area contenuti</i> (b) in cui si sviluppa il
+          documento corrente. Il modello include anche un <i>gradiente</i> (c)
+          che personalizza graficamente la parte superiore delle pagine. La
+          gestione del layout è affidata esclusivamente al foglio di stile
+          <i>style.css</i> che è condiviso tra pagine ed indice. Modificando
+          questo elemento è possibile adattare il template ad usi diversi.
+        </p>
+        <h2>
+          Personalizzare il menù
+        </h2>
+        <p>
+          Il menù laterale (a) è contenuto nel file indice.html Il modello di
+          riferimento è basato su liste numerate suddivise in sezioni. Per
+          aggiungere una nuova voce all'indice è quindi sufficiente aggiungere
+          un nuovo blocco &lt;li&gt;.
+        </p>
+        <p>
+          Per il corretto funzionamento del template i link inseriti nel menù
+          necessitano dell'attributo <i>target="_top"</i>. Fanno ovviamente
+          eccezione eventuali link esterni al progetto.
+        </p>
+        <p>
+          Se il menù è particolarmente lungo compariranno le normali barre di
+          scorrimento. Si può eliminare questo comportamento aumentano la
+          dimensione della proprietà <i>height</i> nel selettore <i>iframe</i>
+          di <i>style.css</i>.
+        </p>
+        <h2>
+          Personalizzare l'area contenuti
+        </h2>
+        <p>
+          HHD è preimpostato per schermi a bassa risoluzione. Il selettore
+          <i>#esterno</i> ingloba menù ed area contenuti ed è inizialmente
+          impostato per una larghezza di 768 pixel ed un layout fisso. Il
+          selettore <i>#box</i> contiene invece l'area contenuti vera e propria
+          impostata ad una larghezza di 540 pixel.
+        </p>
+        <p>
+          Per aumentare la larghezza dell'area contenuti occorre quindi
+          aumentare parallelamente la proprietà <i>width</i> sia nel selettore
+          #esterno che nel selettore #box.
+        </p>
+        <p>
+          Per rendere invece il template fluido ed in grado di adattarsi a
+          varie risoluzioni occorre procedere come segue. In style.css occorre
+          eliminare il selettore <i>#esterno</i> quindi nel selettore
+          <i>#box</i> occorre eliminare la proprietà <i>width</i>. In questo
+          modo l'area contenuti slitterà al di sotto del menù. Per evitare un
+          vuoto tra menù e contenuto si dovrà infine modificare la proprietà
+          <i>height</i> nel selettore <i>iframe</i>.
+        </p>
+        <h2>
+          Personalizzazione del gradiente
+        </h2>
+        <p>
+          La parte superiore delle pagine di HDD è personalizzata con uno
+          sfondo a gradiente (c). Per rimuovere lo sfondo dall'area contenuti
+          eliminare la proprietà <i>background-image</i> dal selettore #box.
+          Per rimuovere lo sfondo dal menù eliminare la proprietà
+          <i>background-image</i> dal selettore iframe.
+        </p>
+        <p>
+          Il gradiente predefinito è contenuto nel file <i>sf.png</i>. E'
+          possibile cambiare gradiente modificando questo file. Alcuni
+          gradienti alternativi sono contenuti nei file sf1.png, sf2.png ed
+          sf3.png. Per utilizzare uno di questi gradienti eliminare l'originale
+          sf.png e rinominare il gradiente voluto in sf.png.
+        </p>
+        <h2>
+          Note di versione
+        </h2>
+        <p>
+          Html Help Desk 0.1 è una versione preliminare pre-alpha. E' stata
+          testata principalmente su Firefox Quantum ma sembra funzionare
+          correttamente anche su Internet Explorer 11 ed Edge. Il foglio di
+          stile è stato validato tramite il <a href=
+          "https://jigsaw.w3.org/css-validator/" target="_blank">servizio del
+          W3C</a>. <b>Ultimo aggiornamento: 06.05.2018</b>.
+        </p>
+        <h3>
+          Elenco dei file
+        </h3>
+        <p>
+          Html Help Desk 0.1 è composto dai seguenti file:
+        </p>
+        <ol>
+          <li>basic.html
+          </li>
+          <li>elenco.txt
+          </li>
+          <li>hhd.png
+          </li>
+          <li>index.html
+          </li>
+          <li>indice.html
+          </li>
+          <li>sf.png
+          </li>
+          <li>sf1.png
+          </li>
+          <li>sf2.png
+          </li>
+          <li>sf3.png
+          </li>
+          <li>style.css
+          </li>
+          <li>tutorial.html
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
