@@ -7,3 +7,5 @@ Il foglio di stile CSS è impostato su canoni di minimalismo ma può essere faci
 
 ## English
 Html Help Desk is a simple HTML+CSS template designed to create tutorials, guides and document collections (help desk). HHD is designed to have a side menu shared between individual pages. In this way the menu can be updated separately without having to change the code of the individual pages.
+
+![Anteprima](https://github.com/m13o/HtmlHelpDesk/blob/master/hhd.png)
